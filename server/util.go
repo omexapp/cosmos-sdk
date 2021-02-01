@@ -58,7 +58,7 @@ func PersistentPreRunEFn(context *Context) func(*cobra.Command, []string) error 
 		if err != nil {
 			return err
 		}
-		// okchain
+		// omchain
 		output := os.Stdout
 		if !config.LogStdout {
 			output, err = os.OpenFile(config.LogFile, os.O_CREATE|os.O_RDWR|os.O_APPEND, 0666)
